@@ -1,0 +1,30 @@
+# scientific Python
+matplotlib==3.3.1
+pandas==1.1.0
+seaborn==0.10.1
+scikit-learn==0.23.2
+sklearn-pandas==2.0.0
+ray
+ray[debug]
+
+# interactive Python
+ipykernel==5.3.4
+ipython==7.17.0
+jupyter==1.0.0
+
+# utilities
+tqdm==4.48.2
+pylint==2.5.3
+python-dotenv==0.10.3
+invoke==1.4.1
+pytest==5.3.4
+mypy==0.782
+
+# scraping
+lxml==4.5.2
+beautifulsoup4==4.9.1
+requests==2.24.0
+
+# scrapy
+scrapy==2.3.0
+scrapy_fake_useragent==1.4.4
