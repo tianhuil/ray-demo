@@ -2,7 +2,7 @@ SHELL := /bin/bash
 
 # set variables
 export NAME = ray-demo
-export PYTHON = python3
+export PYTHON = python3.8
 export PIP = pip3
 export ROOT_DIR = $(shell pwd)
 
