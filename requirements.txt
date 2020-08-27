@@ -8,6 +8,8 @@ sklearn-pandas==2.0.0
 # ray
 ray
 ray[debug]
+ray[tune]
+ray[rllib]
 pickle5
 
 # interactive Python
