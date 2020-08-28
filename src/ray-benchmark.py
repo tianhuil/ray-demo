@@ -1,20 +1,11 @@
 import ray
 import numpy as np
 
-from contextlib import contextmanager
-import datetime
-import sys
+from util import timer
+
 
 dim = 150
 T = 1000
-
-
-@contextmanager
-def timer(msg, out=sys.stdout):
-    start = datetime.datetime.now()
-    yield
-    end = datetime.datetime.now()
-    out.write("{}: {}secs\n".format(msg, (end - start).total_seconds()))
 
 def inverse(A):
     return np.linalg.inv(A)
