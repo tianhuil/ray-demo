@@ -48,3 +48,14 @@ if __name__ == '__main__':
             ray_func()
     finally:
         ray.shutdown()
+
+"""
+Ray is about 3X faster.  Probably because there's relatively little data passing back and forth.
+
+2020-08-28 19:25:26,892 INFO resource_spec.py:223 -- Starting Ray with 33.54 GiB memory available for workers and up to 16.78 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-08-28 19:25:27,389 INFO services.py:1191 -- View the Ray dashboard at localhost:8266
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:28<00:00, 34.79it/s]
+No ray: 28.753611secs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:09<00:00, 105.82it/s]
+With ray: 9.535182secs
+"""
